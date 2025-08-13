@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 persons:
   - "John Q. Sample"
   - "Jane Analyst"
@@ -11,3 +12,10 @@ locations:
 phrases:
   - "CUI"
   - "DoD Only"
+=======
+protected_terms:
+  - "Project Falcon"
+  - "John Doe"
+  - "Washington DC"
+  - "Acme Corp"
+>>>>>>> 6accd3bfe86198d4f18ba343b020d56cbc79342c
