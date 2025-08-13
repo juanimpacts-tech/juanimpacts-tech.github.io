@@ -1,1 +1,0 @@
-# juanimpacts-tech.github.io
