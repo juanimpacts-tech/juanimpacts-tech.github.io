@@ -1,0 +1,18 @@
+{
+  "manifest": {
+    "doc_id": "163330b7-aca4-4d55-ab0a-fae674623907",
+    "detections": [],
+    "stats": {
+      "total": 0,
+      "coverage_estimate": 1.0
+    }
+  },
+  "decision": {
+    "profile": "strict",
+    "allow": false,
+    "reasons": [
+      "OPA eval error"
+    ],
+    "stderr": ""
+  }
+}
