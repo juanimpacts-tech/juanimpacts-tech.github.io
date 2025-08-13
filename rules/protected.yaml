@@ -1,0 +1,13 @@
+persons:
+  - "John Q. Sample"
+  - "Jane Analyst"
+clients:
+  - "Contoso"
+  - "Fabrikam"
+projects:
+  - "Project Orion"
+locations:
+  - "Bldg 5 SCIF"
+phrases:
+  - "CUI"
+  - "DoD Only"

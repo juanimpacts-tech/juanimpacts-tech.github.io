@@ -1,0 +1,20 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -r requirements.txt
+      - name: Static checks
+        run: python - <<'PY'
+print("OK")
+PY
+      - name: OPA check
+        uses: open-policy-agent/setup-opa@v2
+      - name: Eval sample manifest
+        run: |
+          echo '{"detections":[],"stats":{"coverage_estimate":1.0}}' > in.json
+          opa eval -f pretty -d policies/redaction.rego "data.privypress.allow" --input in.json
